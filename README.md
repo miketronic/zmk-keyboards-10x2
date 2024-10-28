@@ -1,6 +1,6 @@
 # 10x2 ZMK Module
 
-This repository contains the shield files for [Desolation](https://github.com/miketronic/10x2) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
+This repository contains the shield files for [10x2](https://github.com/miketronic/10x2) to allow users to build firmware. This can be done by adding the module to the west.yml found in your zmk-config's config directory. There is a full guide available for this here: [ZMK Modules Doc](https://zmk.dev/docs/features/modules)
 
 # Usage
 
