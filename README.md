@@ -1,0 +1,2 @@
+# zmk-keyboards-10x2
+10x2 ZMK Module
