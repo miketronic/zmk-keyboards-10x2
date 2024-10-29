@@ -225,6 +225,8 @@
 
         cccv: copy_paste {
            compatible = "zmk,behavior-hold-tap";
+           label = "tap_dance_copy_paste";
+           tapping-term-ms = <200>;
            #binding-cells = <2>;
            flavor = "hold-preferred";
            bindings = <&kp>, <&kp>;
@@ -232,7 +234,9 @@
 
         hrm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
+            label = "tap_dance_hrm";
             #binding-cells = <2>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
