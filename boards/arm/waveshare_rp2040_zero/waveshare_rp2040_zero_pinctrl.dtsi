@@ -1,6 +1,7 @@
 /
 #include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
+{
 &pinctrl {
     uart1_default: uart0_default {
 	group1 {
@@ -29,4 +30,5 @@
 	    input-enable;
 	};
     };
+};
 };
