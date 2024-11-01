@@ -10,11 +10,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEF         0
-#define SYM         1
-#define NUM         2
-#define MSE         3
-#define MAC         4
-#define FN          5
+#define NUM         1
 
 #define SFTENT &mt RSHIFT RET
 #define SFTSPC &mt LSHIFT SPC
@@ -25,7 +21,7 @@
 #define MIN   &kp MINUS
 #define BSP   &kp BSPC
 #define UNDR  &kp UNDER
-#define ---   &none
+#define NNN   &none
 
 #define MM_U &mmv MOVE_UP
 #define MM_D &mmv MOVE_DOWN
@@ -337,49 +333,19 @@
             >;
         };
 
-        symbol_layer {
-            bindings = <
-                &grtl &kp STAR ---        &par &bkt &thn
-                ---   &kp PLUS ---        &cln &sls &pipe
-                ---   ---      ---        &qot &at &perc 
-                               ---        ---
-            >;
-        };([<+:
-
         number_layer {
             bindings = <
                 &kp TAB &kp STAR  &trans     &kp N7   &kp N8   &kp N9
-                ---  ---   ---               &kp N4   &kp N5   &kp N6
-                ---  ---   ---               &kp N1   &td20    &kp N3
-                ---  ---    
+                NNN  NNN   NNN               &kp N4   &kp N5   &kp N6
+                NNN  NNN   NNN               &kp N1   &td20    &kp N3
+                NNN  NNN    
             >;
         };
 
-        mouse_layer {
-            bindings = <
-                MS_U    MM_U    MS_D    MIN    UNDR  BSP
-                MM_L    MM_D    MM_R    ---    ---   ---
-                MCK     RCK     LCK     ---    ---   CPST
-                RCK     LCK
-            >;
-        };
 
-        macro_layer {
-            bindings = <
-                ---     ---     ---      --- --- ---
-                &trans  &lines  &square  --- --- ---
-                ---     &date   &time    &th &re &yw
-                ---     ---
-            >;
-        };
 
-        function_layer {  
-            bindings = <
-                CPST       CLIP         GSHT     &kp F2       &kp UP      &kp DEL
-                &kp TAB    ---          &pg      &kp LEFT     &kp DOWN    &kp RIGHT
-                &trans     &kp LC(BSPC) &hmend   &kp LC(Z)    &kp DEL     &kp LC(Y)
-                ---        ---
-            >;
-        };
+
+
+
     };
 };
